@@ -51,3 +51,9 @@ services:
       - "./data/server:/data"
       - "./models:/app/models"
       - "./cache_dir:/app/cache_dir"
+
+networks:
+  default:
+    name: label_link
+    external: true
+      
